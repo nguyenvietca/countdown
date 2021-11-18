@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Welcome to countdown</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/snow/snow.css" rel="stylesheet">
+</head>
+<style>
+    body {
+        background-size: cover;
+        background-image: url(image/bg2.jpg);
+        background-repeat: no-repeat;
+    }
+</style>
+
+<bod>
+    <div class='snow-container'>
+        <div class='snow foreground'></div>
+        <div class='snow foreground layered'></div>
+        <div class='snow middleground'></div>
+        <div class='snow middleground layered'></div>
+        <div class='snow background'></div>
+        <div class='snow background layered'></div>
+    </div>
+    <br>
+    <div class="container">
+        <h2 id="hello" class="font-weight-bold">Welcome to countdown</h2>
+        <br>
+        <!-- Nav tabs -->
+        <ul class="nav nav-pills" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#noel">Noel</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#dl">Tết dương lịch</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#al">Tết âm lịch</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div id="noel" class="container tab-pane active"><br>
+                <!-- <h3>Noel</h3> -->
+                <!------------------------------------------------>
+                <div class="card-group justify-content-between">
+                    <div class="card border-secondary mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Ngày</div>
+                        <div class="card-body text-secondary">
+                            <!-- <h5 class="card-title">Secondary card title</h5> -->
+                            <p class="card-text display-1 text-center" id="days">...</p>
+                        </div>
+                    </div>
+                    <div class="card border-success mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Giờ</div>
+                        <div class="card-body text-success">
+                            <!-- <h5 class="card-title">Success card title</h5> -->
+                            <p class="card-text display-1 text-center" id="hours">...</p>
+                        </div>
+                    </div>
+                    <div class="card border-danger mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Phút</div>
+                        <div class="card-body text-danger">
+                            <!-- <h5 class="card-title">Danger card title</h5> -->
+                            <p class="card-text display-1 text-center" id="minutes">...</p>
+                        </div>
+                    </div>
+                    <div class="card border-info mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Giây</div>
+                        <div class="card-body text-info">
+
+                            <p class="card-text display-1 text-center" id="seconds">...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="dl" class="container tab-pane fade"><br>
+                <!-- <h3>Tết dương l</h3> -->
+                <!------------------------------------------------>
+                <div class="card-group justify-content-between">
+                    <div class="card border-secondary mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Ngày</div>
+                        <div class="card-body text-secondary">
+                            <!-- <h5 class="card-title">Secondary card title</h5> -->
+                            <p class="card-text display-1 text-center" id="dldays">...</p>
+                        </div>
+                    </div>
+                    <div class="card border-success mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Giờ</div>
+                        <div class="card-body text-success">
+                            <!-- <h5 class="card-title">Success card title</h5> -->
+                            <p class="card-text display-1 text-center" id="dlhours">...</p>
+                        </div>
+                    </div>
+                    <div class="card border-danger mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Phút</div>
+                        <div class="card-body text-danger">
+                            <!-- <h5 class="card-title">Danger card title</h5> -->
+                            <p class="card-text display-1 text-center" id="dlminutes">...</p>
+                        </div>
+                    </div>
+                    <div class="card border-info mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Giây</div>
+                        <div class="card-body text-info">
+                            <!-- <h5 class="card-title">Info card title</h5> -->
+                            <p class="card-text display-1 text-center" id="dlseconds">...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="al" class="container tab-pane fade"><br>
+                <!-- <h3>Menu 2</h3> -->
+                <!------------------------------------------------>
+                <div class="card-group justify-content-between">
+                    <div class="card border-secondary mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Ngày</div>
+                        <div class="card-body text-secondary">
+                            <!-- <h5 class="card-title">Secondary card title</h5> -->
+                            <p class="card-text display-1 text-center" id="aldays">...</p>
+                        </div>
+                    </div>
+                    <div class="card border-success mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Giờ</div>
+                        <div class="card-body text-success">
+                            <!-- <h5 class="card-title">Success card title</h5> -->
+                            <p class="card-text display-1 text-center" id="alhours">...</p>
+                        </div>
+                    </div>
+                    <div class="card border-danger mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Phút</div>
+                        <div class="card-body text-danger">
+                            <!-- <h5 class="card-title">Danger card title</h5> -->
+                            <p class="card-text display-1 text-center" id="alminutes">...</p>
+                        </div>
+                    </div>
+                    <div class="card border-info mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Giây</div>
+                        <div class="card-body text-info">
+                            <!-- <h5 class="card-title">Info card title</h5> -->
+                            <p class="card-text display-1 text-center" id="alseconds">...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </body>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " crossorigin="anonymous "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " crossorigin="anonymous "></script>
+        <script src="js/bootstrap/bootstrap.min.js"></script>
+        <script src="js/index.js"></script>
+
+</html>
