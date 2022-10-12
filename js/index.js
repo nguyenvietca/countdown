@@ -6,13 +6,13 @@ var dl = "#txtDl";
 var al = "#txtAl";
 
 var currentYear = new Date().getFullYear();
-var dateNoel = "12/25/2021";
+var dateNoel = "12/25/2022";
 // dateNoel = "2021/12/25";
 //var dateDl = "01/01/" + ++currentYear;
-var dateDl = "01/01/2022";
+var dateDl = "01/01/2023";
 CountDownTimer(dateNoel, noel);
 CountDownTimer(dateDl, dl);
-CountDownTimer("02/01/2022", al);
+CountDownTimer("01/22/2023", al);
 
 setInterval(() => {
     currentDate = new Date().toLocaleString();
